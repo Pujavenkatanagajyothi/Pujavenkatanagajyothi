@@ -1,0 +1,26 @@
+1.What is the relationship between classes and modules?
+A.Classes may generate instances (objects), and have per-instance state (instance variables). Modules may be mixed in to classes and other modules. The mixed in module's constants and methods blend into that class's own, augmenting the class's functionality. Classes, however, cannot be mixed in to anything.
+
+2.How do you make instances and classes?
+A.To create instances of a class, you call the class using class name and pass in whatever arguments its __init__ method accepts.
+
+3.Where and how should be class attributes created?
+A.Class attributes belong to the class itself they will be shared by all the instances. Such attributes are defined in the class body parts usually at the top, for legibility.
+
+4.Where and how are instance attributes created?
+A.An instance attribute is a Python variable belonging to one, and only one, object. This variable is only accessible in the scope of this object and it is defined inside the constructor function, __init__(self,..) of the class.
+
+5.What does the term "self" in a Python class mean?
+A The self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.
+
+6.How does a Python class handle operator overloading?
+A.The operator overloading in Python means provide extended meaning beyond their predefined operational meaning. Such as, we use the "+" operator for adding two integers as well as joining two strings or merging two lists. We can achieve this as the "+" operator is overloaded by the "int" class and "str" class.
+
+7.When do you consider allowing operator overloading of your classes?
+A.Consider that we have two objects which are a physical representation of a class (user-defined data type) and we have to add two objects with binary '+' operator it throws an error, because compiler don't know how to add two objects. So we define a method for an operator and that process is called operator overloading
+
+8.What is the most popular form of operator overloading?
+A.A very popular and convenient example is the Addition (+) operator. Just think how the '+' operator operates on two numbers and the same operator operates on two strings. It performs “Addition” on numbers whereas it performs “Concatenation” on strings.
+
+9.What are the two most important concepts to grasp in order to comprehend Python OOP code?
+A.In this article, we will elaborate on two key concepts of OOP which are inheritance and polymorphism. Both inheritance and polymorphism are key ingredients for designing robust, flexible, and easy-to-maintain software.
